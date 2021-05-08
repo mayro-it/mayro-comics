@@ -1,0 +1,31 @@
+.red-btn {
+    width: 170px;
+    height: 52px;
+    background: #d33639;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    border: unset;
+    font-family: "teko";
+    line-height: 26px;
+}
+.red-btn:hover {
+    background: inherit;
+    color: #d33639;
+    border: 3px solid #d33639;
+    transition: ease-in-out 0.3s;
+}
+
+.red-btn:disabled {
+    background: rgba(211, 54, 57, 0.8);
+}
+
+.white-btn {
+    background: #ffffff;
+    color: #d33639;
+}
+.white-btn:hover {
+    background: inherit;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+}
