@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    .left-col {
+        display: flex;
+        flex: 0.5;
+        justify-content: flex-start;
+        .logo-container {
+            width: 160px;
+            display: flex;
+            justify-content: start;
+            height: 45px;
+        }
+    }
+    .right-col {
+        display: flex;
+        flex: 0.3;
+        justify-content: center;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            a {
+                color: #d33639;
+                font-size: 13px;
+                font-family: "openSans";
+                font-weight: 700;
+            }
+        }
+    }
+}

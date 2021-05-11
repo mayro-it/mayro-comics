@@ -3,3 +3,9 @@
     font-display: swap;
     src: local("teko"), url("/assets/fonts/Teko-Regular.ttf");
 }
+
+@font-face {
+    font-family: "openSans";
+    font-display: swap;
+    src: local("openSana"), url("/assets/fonts/OpenSans-Regular.ttf");
+}
