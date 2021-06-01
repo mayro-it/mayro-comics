@@ -1,0 +1,77 @@
+.footer {
+    height: 315px;
+    background-image: url(/assets/images/footer-shadow.png), url(/assets/images/footer.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    .footer-body {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            .footer-links-header {
+                font-weight: 700;
+                font-family: "teko";
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+            .footer-links-items {
+                display: flex;
+                flex-direction: column;
+                font-family: "openSans";
+                font-weight: 600;
+                a {
+                    padding: 5px 0;
+                }
+            }
+            .sub-header {
+                padding: 5px 0;
+                font-family: "openSans";
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                font-family: "openSans";
+                font-style: unset;
+            }
+        }
+        .ant-input-group-wrapper {
+            height: 40px;
+            margin-bottom: 10px;
+            .ant-input {
+                width: 240px;
+                height: 40px;
+                border: unset !important;
+            }
+            ::placeholder {
+                padding-right: 10px !important;
+            }
+            .ant-btn {
+                cursor: pointer !important;
+                width: 130px;
+                height: 40px;
+                background: #d33639;
+                font-size: 15px;
+                color: #fff;
+                font-family: "teko";
+                font-weight: 700;
+                border: unset !important;
+            }
+        }
+    }
+    .footer-bottom {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 76%;
+        margin-top: 2vh;
+        p {
+            padding: 3px 0;
+        }
+    }
+}

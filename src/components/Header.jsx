@@ -17,14 +17,13 @@ const Header = () => {
                     <Link to='/about'>Contact us</Link>
                 </nav>
             </div>
-
         </header>
     )
 }
 
 Header.propTypes = {
 
-}
+};
 
-export default Header
+export default Header;
 

@@ -48,6 +48,7 @@
         "json5-loader": "^4.0.1",
         "mini-css-extract-plugin": "^1.4.0",
         "node-sass": "^5.0.0",
+        "postcss": "^8.2.15",
         "postcss-loader": "^5.2.0",
         "sass-loader": "^11.0.1",
         "style-loader": "^2.0.0",

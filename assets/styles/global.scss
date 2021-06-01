@@ -1,3 +1,32 @@
 .link {
     cursor: pointer;
 }
+
+.comics-intrioduction {
+    .cover-name-container {
+        display: flex;
+        font-family: "teko";
+        .cover-text {
+            font-size: 200px;
+            color: #e3e3e3;
+        }
+        .cover-name-header {
+            font-size: 60px;
+            position: absolute;
+            top: 35vh;
+            color: #d33639;
+            font-weight: 700;
+            .second-text {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 95%;
+                .underLine {
+                    width: 200px;
+                    height: 4px;
+                    background: #d33639;
+                }
+            }
+        }
+    }
+}

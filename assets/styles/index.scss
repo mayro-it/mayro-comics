@@ -132,6 +132,9 @@ img {
 }
 
 @import "/assets/styles/global";
-@import "/assets/styles/fonts.scss";
-@import "/assets/styles/buttons";
 @import "/assets/styles/header";
+@import "/assets/styles/fonts";
+@import "/assets/styles/common/buttons";
+@import "/assets/styles/common/homePageSlider";
+
+@import "/assets/styles/footer";
