@@ -31,5 +31,6 @@ ComicsIntroduction.propTypes = {
     coverName: PropTypes.string.isRequired,
     headerText: PropTypes.string,
     shortText: PropTypes.string,
+    text: PropTypes.string,
 };
 export default ComicsIntroduction;

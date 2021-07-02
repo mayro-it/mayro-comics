@@ -1,0 +1,84 @@
+.eye-slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    .eye-slider-container-item-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "teko";
+        font-size: 20px;
+        line-height: 1.36;
+        text-align: right;
+        color: #343340;
+        cursor: pointer;
+        .eye-slider-container-item {
+            width: 95%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .eye-slider {
+            display: flex;
+            justify-content: space-between;
+            width: 30px;
+            height: 100%;
+            .active-index {
+                font-size: 30px;
+                color: #d33639;
+                display: flex;
+                align-items: center;
+            }
+            .eye-slider-dots {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                .dot {
+                    // border: solid 1px #707070;
+                    background-color: #d33639;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .active {
+        font-size: 22px;
+        font-weight: 700;
+        .eye-slider-dots {
+            background: #d33639;
+            .dot {
+                // visibility: hidden;
+            }
+        }
+    }
+}
+
+.eye-slider-content {
+    display: flex;
+    justify-content: center;
+
+    .carousel {
+        width: 225px;
+        .carousel-text {
+            display: flex !important;
+            flex-direction: column;
+            .text-header {
+                color: #d33639;
+                font-size: 30px;
+                font-weight: 700;
+                font-family: "teko";
+                line-height: 33px;
+                width: 90%;
+                margin-bottom: 15px;
+            }
+            .text {
+                font-size: 16px;
+                font-family: "openSans";
+                line-height: 21px;
+            }
+        }
+    }
+}

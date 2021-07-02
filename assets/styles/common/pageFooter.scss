@@ -1,0 +1,34 @@
+.page-footer-container {
+    font-family: "teko";
+    .page-footer-header {
+        color: #d33639;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .page-footer-body {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        .cover-text-container {
+            display: flex;
+            align-items: center;
+            .cover-text {
+                color: #d33639;
+                opacity: 0.3;
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 120px;
+            }
+            .cover-text-body {
+                color: #000000;
+                font-size: 30px;
+                line-height: 36px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                margin-left: 1%;
+            }
+        }
+    }
+}
