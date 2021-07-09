@@ -1,0 +1,37 @@
+.comics-desc-container {
+    background-image: url("/assets/images/redImg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    .comics-desc-body {
+        display: flex;
+        justify-content: space-between;
+
+        .comics-desc-content {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .comics-desc-content-header {
+                position: relative;
+                font-family: "teko";
+                .text-header {
+                    color: #e8eaea;
+                    letter-spacing: 0.04em;
+                    font-weight: 700;
+                    position: relative;
+                    font-size: 50px;
+                    z-index: 999;
+                }
+                .background {
+                    position: absolute;
+                    top: -60px;
+                    color: #c83134;
+                    font-size: 100px;
+                    letter-spacing: 0.04em;
+                    line-height: 145px;
+                }
+            }
+        }
+    }
+}
