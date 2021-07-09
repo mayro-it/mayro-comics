@@ -1,20 +1,53 @@
 .comics-desc-container {
-    background-image: url("/assets/images/redImg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    
+    // background-image: url("/assets/images/redImg.png");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    width: 90vw;
+    height: 700px;
+    background: #d33639;
+    .comics-desc-top {
+        border-right: 150px solid transparent;
+        height: 0;
+        width: 400px;
+        border-bottom: 150px solid #d33639;
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
     .comics-desc-body {
         display: flex;
         justify-content: space-between;
-
+        width: 100%;
+        align-items: center;
+        height: 100%;
+        .slider-container {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            .home-page-slider {
+                .buttons-container {
+                    justify-content: center;
+                    .buttons-items {
+                        .arrow-icon {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+        }
         .comics-desc-content {
-            width: 30%;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+            width: 50%;
             .comics-desc-content-header {
                 position: relative;
                 font-family: "teko";
+                display: flex;
+                justify-content: flex-start;
+                width: 50%;
                 .text-header {
                     color: #e8eaea;
                     letter-spacing: 0.04em;
@@ -32,6 +65,25 @@
                     line-height: 145px;
                 }
             }
+            .text-content {
+                color: #fff;
+                font-size: 16px;
+                font-family: "openSans";
+                width: 50%;
+            }
+            .btn-container {
+                width: 50%;
+                margin-top: 15px;
+            }
         }
+    }
+    .comics-desc-bottom {
+        border-left: 150px solid transparent;
+        height: 0;
+        width: 400px;
+        border-top: 150px solid #d33639;
+        position: absolute;
+        right: 10vw;
+        bottom: 17vh;
     }
 }
