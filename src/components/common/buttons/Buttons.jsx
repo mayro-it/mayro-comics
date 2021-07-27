@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Button } from 'antd';
 
 const Buttons = ({ classname, text, handleChange }) => {
-    console.log(classname)
     return (
         <Button className={`red-btn ${classname} link`} onClick={handleChange}>
             {text}

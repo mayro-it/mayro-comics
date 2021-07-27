@@ -1,0 +1,110 @@
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 25vh;
+    .contact-us-body {
+        background: #d33639;
+        width: 900px;
+        height: 560px;
+        position: relative;
+        .comics-desc-top {
+            border-left: 150px solid transparent;
+            height: 0;
+            width: 450px;
+            border-bottom: 150px solid #d33639;
+            position: absolute;
+            right: 0;
+            top: -2vh;
+        }
+        .comics-desc-bottom {
+            border-right: 150px solid transparent;
+            height: 0;
+            width: 450px;
+            border-top: 150px solid #d33639;
+            position: absolute;
+            bottom: -2vh;
+        }
+        .contact-us-content {
+            display: flex;
+            align-items: center;
+            height: 90%;
+            justify-content: space-around;
+            .contact-us-left-col {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 85%;
+                z-index: 999;
+                .contact-us-header {
+                    display: flex;
+                    justify-content: center;
+                    .header-text {
+                        color: #f1f1f1;
+                        font-size: 20px;
+                        font-family: "teko";
+                        font-weight: 700;
+                    }
+                    .header-text:first-child {
+                        margin-right: 15px;
+                    }
+                    .header-text:last-child {
+                        margin-left: 15px;
+                    }
+                    .selected-tab {
+                        background-color: #f1f1f1;
+                        height: 4px;
+                        width: 60%;
+                        margin: 0 auto;
+                    }
+                }
+
+                .left-col-body {
+                    .input-cont {
+                        display: flex;
+                        justify-content: space-evenly;
+                        .input-group {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                .btn-container {
+                    width: 514px;
+                    margin: 0 auto;
+                    height: 0%;
+                }
+            }
+            .contact-us-right-col {
+                color: #fff;
+                font-size: 13px;
+                font-family: "openSans";
+                font-weight: 600;
+                height: 70%;
+                z-index: 999;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 30%;
+                .right-col-header {
+                    font-size: 50px;
+                    font-weight: 700;
+                    font-family: "teko";
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 40px;
+                    margin-bottom: 40px;
+                }
+
+                .adress-container {
+                    margin-bottom: 70px;
+                }
+                .social-links-container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

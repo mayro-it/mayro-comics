@@ -1,7 +1,16 @@
 .link {
     cursor: pointer;
 }
-
+a{
+    color: unset !important;
+}
+.main-container-header {
+    background-image: url("/assets/images/shadow.png"), url("/assets/images/contactUs.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
 .comics-intrioduction {
     .cover-name-container {
         display: flex;

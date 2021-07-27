@@ -8,6 +8,7 @@ import ComicsIntroduction from '../../components/common/ComicsIntroduction';
 import PageFooter from '../../components/common/PageFooter';
 import EyeSliderContainer from '../../components/EyeSliderContainer';
 import ComicsDesc from '../../components/common/ComicsDesc';
+import ContactUs from '../../pages/ContactUs';
 
 
 const MainRouter = () => {
@@ -15,10 +16,17 @@ const MainRouter = () => {
 
     return (
         <div className='main-container'>
-            <Header />
+               <Header />
+            <div className='main-container-header'>
+                {/* <img src='/assets/images/footer-shadow.png'/> */}
+                {/* <img src='/assets/images/contactUs.png' /> */}
+
+             
+            </div>
             {/* <ComicsIntroduction coverName='01' headerText='“Velvet Revolution”' text='comics' />
             <EyeSliderContainer /> */}
-            <ComicsDesc />
+            <ContactUs />
+            {/* <Footer /> */}
         </div>
     );
 };
