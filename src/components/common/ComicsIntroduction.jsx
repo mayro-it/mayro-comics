@@ -20,11 +20,9 @@ const ComicsIntroduction = ({ coverName, headerText, text, shortText }) => {
             <div className='text-container'>
                 <span>{shortText}</span>
             </div>
-          
-                <Buttons
-                    text={'Buy now'}
-                />
-        
+            <Buttons
+                text={'Buy now'}
+            />
         </div>
     )
 };

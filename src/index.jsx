@@ -6,6 +6,7 @@ import store, { history } from './store/configureReduxStore';
 import Routes from './containers/router';
 import './../assets/styles/index.scss';
 import 'antd/dist/antd.css';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 render((
     <Provider store={store} >

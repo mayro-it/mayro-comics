@@ -9,6 +9,8 @@ import PageFooter from '../../components/common/PageFooter';
 import EyeSliderContainer from '../../components/EyeSliderContainer';
 import ComicsDesc from '../../components/common/ComicsDesc';
 import ContactUs from '../../pages/ContactUs';
+import ShortComics from '../../components/common/ShortComics';
+import ComicsBook from '../../components/ComicsBook';
 
 
 const MainRouter = () => {
@@ -16,16 +18,20 @@ const MainRouter = () => {
 
     return (
         <div className='main-container'>
-               <Header />
-            <div className='main-container-header'>
-                {/* <img src='/assets/images/footer-shadow.png'/> */}
-                {/* <img src='/assets/images/contactUs.png' /> */}
+            <Header />
+            {/* <div className='main-container-header'> */}
 
-             
-            </div>
+
+
+            {/* </div> */}
             {/* <ComicsIntroduction coverName='01' headerText='“Velvet Revolution”' text='comics' />
             <EyeSliderContainer /> */}
-            <ContactUs />
+            {/* <ContactUs /> */}
+            {/* <ShortComics /> */}
+            {/* <ComicsBook imgSrc={'/assets/images/fake/slider1.png'} headerText={`“Tork Angegh”`}
+                 imagesArr={imagesArr}
+                 text={'MAYRO is an Armenian brand, which aimed to make Armenian characters famous and loved by you. Our dream is to spread the Armenian culture around the '} 
+                /> */}
             {/* <Footer /> */}
         </div>
     );

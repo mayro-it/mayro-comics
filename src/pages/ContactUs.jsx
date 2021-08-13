@@ -10,6 +10,9 @@ const ContactUs = () => {
         const { name, value } = e.target
         console.log(name, value);
     };
+    const handleChange = () => {
+        console.log(4444)
+    };
     return (
         <div className='contact-us-container'>
 
@@ -58,7 +61,6 @@ const ContactUs = () => {
                                     placeHolder={'Tell us about your project timline and budget:'}
                                     handleChange={handleInputGroupChange}
                                     textArea
-
                                 />
 
                             </div>
@@ -67,6 +69,7 @@ const ContactUs = () => {
                             <Buttons
                                 classname='white-btn '
                                 text='Send message'
+                                handleChange={handleChange}
                             />
                         </div>
                     </div>
@@ -86,12 +89,11 @@ const ContactUs = () => {
                             <a target='_blank' rel="noopener noreferrer" href='https://www.instagram.com/mayro_comics'>Instagram</a>
                             <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/company/mayrocomics/about/'>Linkedin</a>
                         </div>
-
                     </div>
-
                 </div>
                 <div className='comics-desc-bottom'></div>
             </div>
+
         </div>
     )
 };

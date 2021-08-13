@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     const pageURL = window.location.pathname.split('/');
+    console.log(window.location.pathname)
     const [activeTab, setActiveTab] = useState(pageURL[pageURL.length - 1]);
     return (
         <header className='header'>

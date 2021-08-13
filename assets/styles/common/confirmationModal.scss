@@ -1,0 +1,36 @@
+.confirmation-modal {
+    width: 800px !important;
+    height: 280px;
+    .confirmation-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .text-container {
+            width: 45%;
+            .confirmation-header {
+                color: #d33639;
+                font-weight: 700;
+                font-family: "teko";
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 15px;
+            }
+            .ant-input {
+                height: 40px;
+                border: unset !important;
+                background-color: #d7d7d7;
+            }
+            .ant-btn{
+                border: unset;
+            }
+            .ant-input:focus {
+                border-color: unset;
+            }
+            .ant-input-search-button {
+                height: 40px !important;
+                background-color: #d33639;
+                border-color: unset !important;
+            }
+        }
+    }
+}
