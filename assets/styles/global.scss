@@ -1,7 +1,7 @@
 .link {
     cursor: pointer;
 }
-a{
+a {
     color: unset !important;
 }
 .main-container-header {
@@ -37,5 +37,28 @@ a{
                 }
             }
         }
+    }
+}
+.comics-desc-content-header {
+    position: relative;
+    font-family: "teko";
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    .text-header {
+        color: #e8eaea;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        position: relative;
+        font-size: 50px;
+        z-index: 999;
+    }
+    .background {
+        position: absolute;
+        top: -60px;
+        color: #c83134;
+        font-size: 100px;
+        letter-spacing: 0.04em;
+        line-height: 145px;
     }
 }

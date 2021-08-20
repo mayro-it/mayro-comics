@@ -1,0 +1,20 @@
+.short-comics-container {
+    margin-bottom: 100px;
+    .short-comics-title {
+        color: #000;
+        font-family: "teko";
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .splide__slide {
+        height: 380px;
+    }
+    .splide__slide img {
+        filter: drop-shadow(0px 5px 11px rgba(0, 0, 0, 0.13));
+    }
+    .splide__arrow {
+        background: unset;
+        opacity: unset;
+    }
+}
