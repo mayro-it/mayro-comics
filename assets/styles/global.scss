@@ -11,13 +11,12 @@ a {
     width: 100%;
     background-size: cover;
 }
-.main-heder-about{
+.main-heder-about {
     background-image: url("/assets/images/shadow.png"), url("/assets/images/contactUs.png");
     height: 650x;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-
 }
 .comics-intrioduction {
     .cover-name-container {
@@ -72,5 +71,23 @@ a {
         font-size: 100px;
         letter-spacing: 0.04em;
         line-height: 145px;
+    }
+}
+.page-header {
+    .comics-desc-content-header {
+        width: unset;
+        .text-header {
+            color: #d33639;
+            line-height: 50px;
+            font-size: 60px;
+            letter-spacing: unset;
+        }
+        .background {
+            color: #e4e4e4;
+            top: unset;
+            line-height: 30px;
+            left: 7vw;
+            font-weight: 700;
+        }
     }
 }

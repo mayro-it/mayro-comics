@@ -19,11 +19,12 @@
         display: flex;
         flex: 0.3;
         justify-content: center;
+        color: #d33639;
         nav {
             display: flex;
             justify-content: space-between;
             width: 70%;
-            .selected-tab{
+            .selected-tab {
                 height: 2px;
                 background-color: #d33639;
                 margin-top: 2px;
@@ -38,10 +39,9 @@
     }
 }
 
-.headerNew{
+.headerNew {
     position: absolute;
-    .right-col{
-        color:  #fff;
+    .right-col {
+        color: #fff;
     }
-
 }

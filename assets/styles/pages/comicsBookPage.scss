@@ -1,0 +1,15 @@
+.comics-book-page {
+    .comics-book-container {
+        width: 90%;
+        margin: 0 auto;
+        .page-header {
+            margin: 40px 0;
+        }
+        .comic-book-content {
+            margin-bottom: 100px;
+            .comics-book-buy {
+                margin: 0 auto;
+            }
+        }
+    }
+}

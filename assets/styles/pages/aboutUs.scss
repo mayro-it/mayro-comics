@@ -35,72 +35,75 @@
             }
         }
     }
-    .vision-container {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 100px;
-        margin-bottom: 150px;
-        .images-container {
-            position: relative;
-            .img {
-                width: 370px;
+    .about-us-content {
+        width: 90%;
+        margin: 0 auto;
+        .vision-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            .images-container {
+                position: relative;
+                .img {
+                    width: 370px;
+                }
+                .front-img {
+                    position: absolute;
+                    top: 30vh;
+                    left: 6vw;
+                    height: 230px;
+                }
             }
-            .front-img {
-                position: absolute;
-                top: 30vh;
-                left: 6vw;
-                height: 230px;
-            }
-        }
-        .vision-text-container {
-            width: 50%;
+            .vision-text-container {
+                width: 40%;
 
-            .comics-desc-content-header {
-                width: unset;
-                .text-header {
-                    color: #d33639;
-                }
-                .background {
-                    color: #e4e4e4;
-                    top: unset;
-                    line-height: 50px;
-                }
-            }
-            .text-container {
-                .cover-text-container {
-                    display: flex;
-                    align-items: center;
-                    .cover-text {
+                .comics-desc-content-header {
+                    width: unset;
+                    .text-header {
                         color: #d33639;
-                        opacity: 0.3;
-                        font-size: 100px;
-                        font-weight: 700;
-                        line-height: 120px;
                     }
-                    .cover-text-body {
-                        color: #000000;
-                        font-size: 16px;
-                        line-height: 20px;
-                        position: absolute;
-                        margin-left: 1%;
-                        font-family: "openSans";
-                        height: 13%;
+                    .background {
+                        color: #e4e4e4;
+                        top: unset;
+                        line-height: 50px;
+                    }
+                }
+                .text-container {
+                    .cover-text-container {
                         display: flex;
                         align-items: center;
+                        .cover-text {
+                            color: #d33639;
+                            opacity: 0.3;
+                            font-size: 100px;
+                            font-weight: 700;
+                            line-height: 120px;
+                        }
+                        .cover-text-body {
+                            color: #000000;
+                            font-size: 16px;
+                            line-height: 20px;
+                            position: absolute;
+                            margin-left: 1%;
+                            font-family: "openSans";
+                            height: 13%;
+                            display: flex;
+                            align-items: center;
+                        }
                     }
                 }
             }
         }
-    }
-    .slider-container {
-        padding-top: 100px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        .text-slider {
-            width: 40%;
+        .slider-container {
+            padding-top: 100px;
             display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .text-slider {
+                width: 40%;
+                display: flex;
+            }
         }
-       
     }
 }

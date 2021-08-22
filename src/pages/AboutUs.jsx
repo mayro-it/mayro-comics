@@ -10,8 +10,7 @@ const AboutUs = () => {
             <div className='about-us-top'>
                 <div className='about-us-top-content'>
                     <div className='about-us-header'>
-                        <div  > About us
-                        </div>
+                        <div>About us</div>
                         <div className='underLine'></div>
                     </div>
                     <div className='about-us-text'>
@@ -22,64 +21,66 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className='vision-container'>
-                <div className='images-container'>
-                    <div className='background-img img'>
-                        <img src='/assets/images/visionImg1.png' />
+            <div className='about-us-content'>
+                <div className='vision-container'>
+                    <div className='images-container'>
+                        <div className='background-img img'>
+                            <img src='/assets/images/visionImg1.png' />
+                        </div>
+                        <div className='front-img img'>
+                            <img src='/assets/images/visionImg2.png' />
+                        </div>
                     </div>
-                    <div className='front-img img'>
-                        <img src='/assets/images/visionImg2.png' />
-                    </div>
-                </div>
-                <div className='vision-text-container'>
-                    <div className='comics-desc-content-header'>
-                        <div className='background'>visions</div>
-                        <div className='text-header'>Our visions</div>
-                    </div>
-                    <div className='text-container'>
-                        <div className='cover-text-container'>
-                            <div className='cover-text'>1</div>
-                            <div className='cover-text-body'>
-                                <span>
-                                    The Velvet Revolution comic book is about the events that took place in Armenia a year ago,
-                                    and was later characterized as revolution by people in Armenia. This is not a story about politicians,
-                                    or about the development
-                                </span>
+                    <div className='vision-text-container'>
+                        <div className='comics-desc-content-header'>
+                            <div className='background'>visions</div>
+                            <div className='text-header'>Our visions</div>
+                        </div>
+                        <div className='text-container'>
+                            <div className='cover-text-container'>
+                                <div className='cover-text'>1</div>
+                                <div className='cover-text-body'>
+                                    <span>
+                                        The Velvet Revolution comic book is about the events that took place in Armenia a year ago,
+                                        and was later characterized as revolution by people in Armenia. This is not a story about politicians,
+                                        or about the development
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='cover-text-container'>
+                                <div className='cover-text'>2</div>
+                                <div className='cover-text-body'>
+                                    <span>
+                                        The Velvet Revolution comic book is about the events that took place in Armenia a year ago,
+                                        and was later characterized as revolution by people in Armenia. This is not a story about politicians,
+                                        or about the development
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='cover-text-container'>
+                                <div className='cover-text'>3</div>
+                                <div className='cover-text-body'>
+                                    <span>
+                                        The Velvet Revolution comic book is about the events that took place in Armenia a year ago,
+                                        and was later characterized as revolution by people in Armenia. This is not a story about politicians,
+                                        or about the development
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div className='cover-text-container'>
-                            <div className='cover-text'>2</div>
-                            <div className='cover-text-body'>
-                                <span>
-                                    The Velvet Revolution comic book is about the events that took place in Armenia a year ago,
-                                    and was later characterized as revolution by people in Armenia. This is not a story about politicians,
-                                    or about the development
-                                </span>
-                            </div>
-                        </div>
-                        <div className='cover-text-container'>
-                            <div className='cover-text'>3</div>
-                            <div className='cover-text-body'>
-                                <span>
-                                    The Velvet Revolution comic book is about the events that took place in Armenia a year ago,
-                                    and was later characterized as revolution by people in Armenia. This is not a story about politicians,
-                                    or about the development
-                                </span>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
+                <div className='slider-container'>
+                    <div className='text-slider'>
+                        <EyeSliderContainer />
+                    </div>
+                    <div className='images-slider'>
+                        <HomePageSlider imagesArr={imagesArr} />
+                    </div>
 
-            </div>
-            <div className='slider-container'>
-                <div className='text-slider'>
-                    <EyeSliderContainer />
                 </div>
-                <div className='images-slider'>
-                    <HomePageSlider imagesArr={imagesArr} />
-                </div>
-
             </div>
         </div>
     )

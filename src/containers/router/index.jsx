@@ -15,6 +15,7 @@ import ShorComicsPage from '../../pages/ShorComicsPage';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from '../../pages/HomePage';
 import AboutUs from '../../pages/AboutUs';
+import ComicsBookPage from '../../pages/ComicsBookPage';
 
 
 const MainRouter = () => {
@@ -28,6 +29,8 @@ const MainRouter = () => {
                 <Switch >
                     <Route path={`/contact`} component={ContactUs} />
                     <Route path={`/about`} component={AboutUs} />
+                    <Route path={'/comic-book'} component={ComicsBookPage} />
+                    <Route path={'/short-comics'} component={ShorComicsPage} />
                     <Route path={`/`} component={HomePage} />
                 </Switch>
             </section>
