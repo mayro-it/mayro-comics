@@ -12,29 +12,26 @@ import ContactUs from '../../pages/ContactUs';
 import ShortComics from '../../components/common/ShortComics';
 import ComicsBook from '../../components/ComicsBook';
 import ShorComicsPage from '../../pages/ShorComicsPage';
+import { Switch, Route } from 'react-router-dom';
+import HomePage from '../../pages/HomePage';
+import AboutUs from '../../pages/AboutUs';
 
 
 const MainRouter = () => {
-    const imagesArr = ['/assets/images/fake/slider1.png', '/assets/images/fake/slider2.png'];
-
+    const pageURL = window.location.pathname;
+    console.log(pageURL)
     return (
         <div className='main-container'>
             <Header />
-            {/* <div className='main-container-header'> */}
-
-
-
-            {/* </div> */}
-            {/* <ComicsIntroduction coverName='01' headerText='“Velvet Revolution”' text='comics' />
-            <EyeSliderContainer /> */}
-            {/* <ContactUs /> */}
-            {/* <ShortComics imagesArray={imagesArr} title={'Kkkkk'}/> */}
-            {/* <ComicsBook imgSrc={'/assets/images/fake/slider1.png'} headerText={`“Tork Angegh”`}
-                 imagesArr={imagesArr}
-                 text={'MAYRO is an Armenian brand, which aimed to make Armenian characters famous and loved by you. Our dream is to spread the Armenian culture around the '} 
-                /> 
-            {/* <Footer /> */}
-            <ShorComicsPage />
+            {pageURL === '/contact' && <div className='main-container-header '></div>}
+            <section style={{ 'minHeight': '100vh' }}>
+                <Switch >
+                    <Route path={`/contact`} component={ContactUs} />
+                    <Route path={`/about`} component={AboutUs} />
+                    <Route path={`/`} component={HomePage} />
+                </Switch>
+            </section>
+            <Footer />
         </div>
     );
 };

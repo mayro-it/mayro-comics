@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Buttons from './buttons/Buttons';
 
-const ComicsIntroduction = ({ coverName, headerText, text, shortText }) => {
+const ComicsIntroduction = ({ coverName, headerText, text, shortText, isVisible,btnText }) => {
     return (
         <div className='comics-intrioduction'>
             <div className='cover-name-container'>
-                <div className={`cover-text `}>
+                {isVisible && <div className={`cover-text `}>
                     {coverName}
-                </div>
+                </div>}
                 <div className='cover-name-header'>
                     <div className='first-text'>{headerText}</div>
                     <div className='second-text'>
@@ -21,7 +21,7 @@ const ComicsIntroduction = ({ coverName, headerText, text, shortText }) => {
                 <span>{shortText}</span>
             </div>
             <Buttons
-                text={'Buy now'}
+                text={btnText}
             />
         </div>
     )
@@ -31,5 +31,7 @@ ComicsIntroduction.propTypes = {
     headerText: PropTypes.string,
     shortText: PropTypes.string,
     text: PropTypes.string,
+    isVisible: PropTypes.bool,
+    btnText: PropTypes.string,
 };
 export default ComicsIntroduction;

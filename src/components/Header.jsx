@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const pageURL = window.location.pathname.split('/');
+    const path = window.location.pathname;
+    const pageURL = path.split('/');
     console.log(window.location.pathname)
     const [activeTab, setActiveTab] = useState(pageURL[pageURL.length - 1]);
     return (
-        <header className='header'>
+        <header className={`header ${path === '/contact' && 'headerNew' || path === '/about' && 'headerNew'}`}>
             <div className='left-col'>
                 <div className='logo-container'>
                     <Link to='/'>
@@ -16,7 +17,7 @@ const Header = () => {
                 </div>
             </div>
             <div className='right-col'>
-                <nav >
+                <nav>
                     <Link to='/about' onClick={() => setActiveTab('about')}>
                         <span>  About us</span>
                         <div className={`${activeTab === 'about' ? 'selected-tab' : ''}`}></div>

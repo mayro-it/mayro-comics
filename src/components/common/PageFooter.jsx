@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const PageFooter = () => {
     return (
@@ -32,11 +31,6 @@ const PageFooter = () => {
             </div>
         </div>
     )
-}
-
-PageFooter.propTypes = {
-
 };
 
 export default PageFooter;
-
