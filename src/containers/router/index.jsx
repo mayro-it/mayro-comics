@@ -16,14 +16,15 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from '../../pages/HomePage';
 import AboutUs from '../../pages/AboutUs';
 import ComicsBookPage from '../../pages/ComicsBookPage';
-
+import { ImagesBox } from '../../components/ImagesBox';
+import ImagesBoxContainer from '../../components/ImagesBoxContainer';
 
 const MainRouter = () => {
     const pageURL = window.location.pathname;
     console.log(pageURL)
     return (
         <div className='main-container'>
-            <Header />
+            {/* <Header />
             {pageURL === '/contact' && <div className='main-container-header '></div>}
             <section style={{ 'minHeight': '100vh' }}>
                 <Switch >
@@ -34,7 +35,9 @@ const MainRouter = () => {
                     <Route path={`/`} component={HomePage} />
                 </Switch>
             </section>
-            <Footer />
+
+            <Footer /> */}
+           <ImagesBoxContainer />
         </div>
     );
 };

@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import InputGroup from '../components/common/InputGroup';
 import Buttons from '../components/common/buttons/Buttons';
+import ConfirmationModal from '../components/common/modal/ConfirmationModal';
 
 
 const ContactUs = () => {
     const [activeTab, setActiveTab] = useState('project');
+    const [visible, setVisible] = useState(false);
     const handleInputGroupChange = e => {
         const { name, value } = e.target
         console.log(name, value);
     };
     const handleChange = () => {
-        console.log(4444)
+        setVisible(true)
     };
     return (
         <div className='contact-us-container'>
@@ -93,7 +95,10 @@ const ContactUs = () => {
                 </div>
                 <div className='comics-desc-bottom'></div>
             </div>
-
+            <ConfirmationModal
+                visible={visible}
+                setVisible={setVisible}
+            />
         </div>
     )
 };

@@ -1,0 +1,92 @@
+.near-me-posts-container {
+    column-count: 3;
+    column-gap: 1em;
+    .near-me-post {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      .shadow-box {
+        
+        display: none;
+        .shadow-box-header {
+          padding: 15px;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          .shadow-box-header-left-column {
+            font-weight: 600;
+            line-height: 1.38;
+          }
+        }
+      }
+    }
+    .near-me-post:hover {
+      .shadow-box {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 15px);
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        .shadow-box-footer {
+          display: flex;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          cursor: pointer;
+          .shadow-box-footer-left-column {
+            width: 60%;
+            .shadow-box-footer-user {
+              background: #000;
+              border-radius: 25px;
+              margin: 10px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              padding: 5px;
+              justify-content: space-around;
+              .shadow-box-footer-user-img {
+                margin: 0;
+              }
+              p {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1.36;
+                cursor: pointer;
+              }
+              .icon-img {
+                width: 15px;
+                transform: rotate(-45deg);
+              }
+            }
+          }
+          .shadow-box-footer-right-column {
+            width: 40%;
+            display: flex;
+          }
+        }
+      }
+    }
+    .near-me-post-container {
+ 
+     
+      margin: 5px 0;
+      .near-me-post-image {
+        // margin: unset;
+       
+      }
+    }
+    .near-me-text-post-container {
+      line-height: 1.38;
+      color: #2c2c2c;
+      padding: 10px;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+    }
+  
+  }

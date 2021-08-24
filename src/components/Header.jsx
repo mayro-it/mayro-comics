@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Select } from 'antd';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const Header = () => {
+    const { Option } = Select;
+    const history = useHistory();
     const path = window.location.pathname;
     const pageURL = path.split('/');
-    console.log(window.location.pathname)
     const [activeTab, setActiveTab] = useState(pageURL[pageURL.length - 1]);
+    const handleRedirect = (value) => {
+        history.push(`/${value}`)
+    };
     return (
         <header className={`header ${path === '/contact' && 'headerNew' || path === '/about' && 'headerNew'}`}>
             <div className='left-col'>
@@ -23,23 +27,29 @@ const Header = () => {
                         <span>  About us</span>
                         <div className={`${activeTab === 'about' ? 'selected-tab' : ''}`}></div>
                     </Link>
-                    <Link to='/comics' onClick={() => setActiveTab('comics')}>
+                    {/* <Link to='/comics' onClick={() => setActiveTab('comics')}>
                         <span> Comics</span>
                         <div className={`${activeTab === 'comics' ? 'selected-tab' : ''}`}></div>
-                    </Link>
+                    </Link> */}
+                    <Select
+                        className='select-box'
+                        defaultValue="Comics"
+                        onChange={handleRedirect}
+                        suffixIcon={< img src='/assets/images/icons/arrowRed.svg' />}
+                        bordered={false}
+                    >
+                        <Option value='comic-book' >Comic Books</Option>
+                        <Option value='short-comics' >Short Comics</Option>
+                    </Select>
                     <Link to='/contact'>
                         <span>Contact us</span>
                         <div className={`${activeTab === 'contact' ? 'selected-tab' : ''}`}></div>
                     </Link>
+
                 </nav>
             </div>
-        </header>
+        </header >
     )
 };
 
-Header.propTypes = {
-
-};
-
 export default Header;
-
