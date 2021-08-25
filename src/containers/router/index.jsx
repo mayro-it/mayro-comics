@@ -17,7 +17,11 @@ import HomePage from '../../pages/HomePage';
 import AboutUs from '../../pages/AboutUs';
 import ComicsBookPage from '../../pages/ComicsBookPage';
 import { ImagesBox } from '../../components/ImagesBox';
-import ImagesBoxContainer from '../../components/ImagesBoxContainer';
+import ImagesBoxContainer from '../../pages/ImagesBoxContainer';
+import PaginationComponent from '../../components/Pagination';
+import TabContainer from '../../components/TabContainer';
+import IlustrationsPagination from '../../pages/IlustrationsPagination';
+
 
 const MainRouter = () => {
     const pageURL = window.location.pathname;
@@ -37,7 +41,9 @@ const MainRouter = () => {
             </section>
 
             <Footer /> */}
-           <ImagesBoxContainer />
+           <TabContainer />
+        
+        
         </div>
     );
 };

@@ -1,0 +1,30 @@
+.tab-container {
+    .ant-tabs-tab {
+        font-size: 30px;
+        font-family: "teko";
+        color: #e4e4e4;
+    }
+    .ant-tabs-nav-wrap{
+        justify-content: center;
+    }
+    .ant-tabs-nav::before {
+        border-bottom: unset !important;
+    }
+    .ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #d33639 !important;
+    }
+
+    .ant-tabs-tab:hover {
+        color: #e4e4e4;
+    }
+    .ant-tabs-tab-btn:focus,
+    .ant-tabs-tab-remove:focus,
+    .ant-tabs-tab-btn:active,
+    .ant-tabs-tab-remove:active {
+        color: #e4e4e4;
+    }
+    .ant-tabs-ink-bar {
+        background-color: #d33639 !important;
+        width: 60px !important;
+    }
+}

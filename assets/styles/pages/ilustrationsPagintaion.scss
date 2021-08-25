@@ -1,0 +1,15 @@
+.ilustrations-container {
+    display: flex;
+    justify-content: center;
+    .ilustrations-page {
+        min-height: 70vh;
+    }
+    .ant-tabs-nav {
+        margin-bottom: 100px;
+    }
+    .ant-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

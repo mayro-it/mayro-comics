@@ -1,0 +1,25 @@
+.pagination-component {
+    .page-conent{
+        display: none;
+    }
+    .activePage{
+        display: flex;
+    }
+    .ant-pagination-item {
+        border: unset;
+        color: #e4e4e4;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: "teko";
+    }
+    .ant-pagination-item-active {
+        border: unset;
+        color: #d33639;
+        background: unset;
+      
+    }
+    .ant-pagination-next,
+    .ant-pagination-prev {
+        display: none;
+    }
+}
