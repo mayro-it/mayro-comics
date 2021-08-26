@@ -13,7 +13,8 @@ const Header = () => {
         history.push(`/${value}`)
     };
     return (
-        <header className={`header ${path === '/contact' && 'headerNew' || path === '/about' && 'headerNew'}`}>
+        <header className={`header ${path === '/contact' && 'headerNew' || path === '/about' && 'headerNew'
+            || path === '/illustrations' && 'headerNew'}`}>
             <div className='left-col'>
                 <div className='logo-container'>
                     <Link to='/'>
@@ -40,6 +41,7 @@ const Header = () => {
                     >
                         <Option value='comic-book' >Comic Books</Option>
                         <Option value='short-comics' >Short Comics</Option>
+                        <Option value='illustrations'>Illustrations</Option>
                     </Select>
                     <Link to='/contact'>
                         <span>Contact us</span>

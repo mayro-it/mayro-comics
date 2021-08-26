@@ -1,26 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { withRouter } from "react-router-dom";
-import Buttons from '../../components/common/buttons/Buttons';
+import { Switch, Route } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import HomePageSlider from '../../components/common/HomePageSlider';
-import ComicsIntroduction from '../../components/common/ComicsIntroduction';
-import PageFooter from '../../components/common/PageFooter';
-import EyeSliderContainer from '../../components/EyeSliderContainer';
-import ComicsDesc from '../../components/common/ComicsDesc';
-import ContactUs from '../../pages/ContactUs';
-import ShortComics from '../../components/common/ShortComics';
-import ComicsBook from '../../components/ComicsBook';
 import ShorComicsPage from '../../pages/ShorComicsPage';
-import { Switch, Route } from 'react-router-dom';
 import HomePage from '../../pages/HomePage';
 import AboutUs from '../../pages/AboutUs';
 import ComicsBookPage from '../../pages/ComicsBookPage';
-import { ImagesBox } from '../../components/ImagesBox';
-import ImagesBoxContainer from '../../pages/ImagesBoxContainer';
-import PaginationComponent from '../../components/Pagination';
-import TabContainer from '../../components/TabContainer';
-import IlustrationsPagination from '../../pages/IlustrationsPagination';
+import ContactUs from '../../pages/ContactUs';
+import CharachtersIlustrationsPage from '../../pages/CharachtersIlustrationsPage';
 
 
 const MainRouter = () => {
@@ -28,7 +16,7 @@ const MainRouter = () => {
     console.log(pageURL)
     return (
         <div className='main-container'>
-            {/* <Header />
+            <Header />
             {pageURL === '/contact' && <div className='main-container-header '></div>}
             <section style={{ 'minHeight': '100vh' }}>
                 <Switch >
@@ -36,14 +24,13 @@ const MainRouter = () => {
                     <Route path={`/about`} component={AboutUs} />
                     <Route path={'/comic-book'} component={ComicsBookPage} />
                     <Route path={'/short-comics'} component={ShorComicsPage} />
+                    <Route path={'/illustrations'} component={CharachtersIlustrationsPage} />
                     <Route path={`/`} component={HomePage} />
                 </Switch>
             </section>
+            <Footer />
 
-            <Footer /> */}
-           <TabContainer />
-        
-        
+
         </div>
     );
 };
