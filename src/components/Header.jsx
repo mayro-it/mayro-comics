@@ -33,13 +33,14 @@ const Header = () => {
                         <div className={`${activeTab === 'comics' ? 'selected-tab' : ''}`}></div>
                     </Link> */}
                     <Select
-                        className='select-box'
+                        className={'select-box'}
                         defaultValue="Comics"
                         onChange={handleRedirect}
                         suffixIcon={< img src='/assets/images/icons/arrowRed.svg' />}
                         bordered={false}
+                        onClick={()=>setActiveTab('')}
                     >
-                        <Option value='comic-book' >Comic Books</Option>
+                        <Option value='comic-book'>Comic Books</Option>
                         <Option value='short-comics' >Short Comics</Option>
                         <Option value='illustrations'>Illustrations</Option>
                     </Select>

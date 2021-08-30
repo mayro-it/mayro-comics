@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Buttons from './buttons/Buttons';
 
-const ComicsIntroduction = ({ coverName, headerText, text, shortText, isVisible,btnText }) => {
+const ComicsIntroduction = ({ coverName, headerText, text, shortText, isVisible, btnText }) => {
     return (
         <div className='comics-intrioduction'>
             <div className='cover-name-container'>
@@ -22,12 +22,13 @@ const ComicsIntroduction = ({ coverName, headerText, text, shortText, isVisible,
             </div>
             <Buttons
                 text={btnText}
+                handleChange={() => console.log(4)}
             />
         </div>
     )
 };
 ComicsIntroduction.propTypes = {
-    coverName: PropTypes.string.isRequired,
+    coverName: PropTypes.string,
     headerText: PropTypes.string,
     shortText: PropTypes.string,
     text: PropTypes.string,

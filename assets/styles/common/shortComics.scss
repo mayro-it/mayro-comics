@@ -8,7 +8,7 @@
         margin-bottom: 25px;
     }
     .splide__slide {
-        height: 380px;
+        width: unset !important;
     }
     .splide__slide img {
         filter: drop-shadow(0px 5px 11px rgba(0, 0, 0, 0.13));
@@ -16,5 +16,11 @@
     .splide__arrow {
         background: unset;
         opacity: unset;
+    }
+    .splide__arrow--prev {
+        left: -1vw;
+    }
+    .splide__list {
+        transform: none !important;
     }
 }

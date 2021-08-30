@@ -13,9 +13,5 @@ const FristIlustrations = () => {
     )
 };
 
-FristIlustrations.propTypes = {
-
-};
 
 export default FristIlustrations;
-

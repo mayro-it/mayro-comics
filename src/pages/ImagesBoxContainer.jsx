@@ -32,7 +32,8 @@ const ImagesBoxContainer = ({ imagesArr }) => {
                 imagesPathArr={imagesArr}
                 active={active}
                 setActive={setActive}
-                toggleVisibility={() => setVisble(!visible)} visible={visible}
+                toggleVisibility={() => setVisble(!visible)}
+                visible={visible}
                 activeIn={activeIn}
                 setActiveInd={setActiveInd}
             />
@@ -46,4 +47,3 @@ ImagesBoxContainer.propTypes = {
 };
 
 export default ImagesBoxContainer;
-

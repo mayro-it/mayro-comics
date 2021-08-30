@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import EyeSliderContainer from '../components/EyeSliderContainer';
 import HomePageSlider from '../components/common/HomePageSlider';
 
 const AboutUs = () => {
-    const imagesArr = ['/assets/images/fake/slider1.png', '/assets/images/fake/slider2.png'];
+    const imagesArr = [['/assets/images/fake/slider1.png', '/assets/images/fake/slider2.png'], ['/assets/images/secondIlustrations/Rectangle 321.png', '/assets/images/fake/slider2.png']];
+    const [activeItem, setActiveItem] = useState(0);
+
     return (
         <div className='about-us-container'>
             <div className='about-us-top'>
@@ -74,10 +76,13 @@ const AboutUs = () => {
                 </div>
                 <div className='slider-container'>
                     <div className='text-slider'>
-                        <EyeSliderContainer />
+                        <EyeSliderContainer
+                            activeItem={activeItem}
+                            setActiveItem={setActiveItem}
+                        />
                     </div>
                     <div className='images-slider'>
-                        <HomePageSlider imagesArr={imagesArr} />
+                        <HomePageSlider imagesArr={imagesArr[activeItem]} />
                     </div>
 
                 </div>

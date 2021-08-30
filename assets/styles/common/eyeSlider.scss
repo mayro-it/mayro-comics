@@ -59,9 +59,10 @@
 .eye-slider-content {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    height: 70%;
     .carousel {
-        width: 225px;
+        width: 400px;
         .carousel-text {
             display: flex !important;
             flex-direction: column;

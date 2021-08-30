@@ -66,11 +66,13 @@ a {
     }
     .background {
         position: absolute;
-        top: -60px;
+        top: -40px;
+        left: 5px;
         color: #c83134;
         font-size: 100px;
         letter-spacing: 0.04em;
         line-height: 145px;
+        font-weight: 700;
     }
 }
 .page-header {

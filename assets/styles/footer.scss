@@ -11,6 +11,7 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
+        padding-top: 50px;
         .footer-links {
             display: flex;
             flex-direction: column;
@@ -65,11 +66,12 @@
         }
     }
     .footer-bottom {
-        justify-content: flex-start;
+        justify-content: flex-end;
         display: flex;
         flex-direction: column;
         width: 76%;
-        margin-top: 2vh;
+        height: 30%;
+
         p {
             padding: 3px 0;
         }

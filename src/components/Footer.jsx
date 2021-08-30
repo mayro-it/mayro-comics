@@ -12,23 +12,23 @@ const Footer = () => {
                 <div className='footer-links'>
                     <div className='footer-links-header'>
                         Links
-                </div>
+                    </div>
                     <div className='footer-links-items'>
-                        <Link to='/'>About us</Link>
-                        <Link to='/'>Comic Books</Link>
-                        <Link to='/'>Short Comics</Link>
-                        <Link to='/'>Characters</Link>
-                        <Link to='/'>Contact us</Link>
+                        <Link to='/about'>About us</Link>
+                        <Link to='/comic-book'>Comic Books</Link>
+                        <Link to='/short-comics'>Short Comics</Link>
+                        <Link to='/illustrations'>Characters</Link>
+                        <Link to='/contact'>Contact us</Link>
                     </div>
                 </div>
                 <div className='footer-links social'>
                     <div className='footer-links-header'>
                         Follow us
-                </div>
+                    </div>
                     <div className='footer-links-items'>
                         <a href='https://www.facebook.com/mayro.comics' target="_blank" rel="noopener noreferrer" >Facebook</a>
                         <a href='https://www.instagram.com/mayro_comics/' target="_blank" rel="noopener noreferrer" >Instagram</a>
-                        <a href='hhttps://www.linkedin.com/company/mayrocomics/about/' target="_blank" rel="noopener noreferrer" >Instagram</a>
+                        <a href='hhttps://www.linkedin.com/company/mayrocomics/about/' target="_blank" rel="noopener noreferrer" >Linkedin</a>
                     </div>
                 </div>
                 <div className="footer-subscribe-section footer-links">

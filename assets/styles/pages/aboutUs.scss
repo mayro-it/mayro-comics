@@ -1,6 +1,6 @@
 .about-us-container {
     .about-us-top {
-        background-image: url("/assets/images/shadow.png"), url("/assets/images/contactUs.png");
+        background-image: url("/assets/images/shadow.png"), url("/assets/images/aboutUs.png");
         height: 650px;
         background-repeat: no-repeat;
         width: 100%;
@@ -9,8 +9,8 @@
         justify-content: flex-end;
         align-items: center;
         .about-us-top-content {
-            width: 45%;
-            margin-right: 3vw;
+            width: 40%;
+            margin-right: 4vw;
             height: 70%;
             display: flex;
             flex-direction: column;
@@ -26,37 +26,38 @@
                 width: 200px;
                 height: 4px;
                 background: #fff;
-                margin-left: 10vw;
+                margin-left: 8vw;
             }
             .about-us-text {
                 font-size: 16px;
                 font-family: "openSans";
                 color: #fff;
+                width: 70%;
             }
         }
     }
     .about-us-content {
-        width: 90%;
         margin: 0 auto;
+        margin-bottom: 50px;
         .vision-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 100px;
             margin-bottom: 150px;
             .images-container {
                 position: relative;
                 .img {
-                    width: 370px;
+                    width: 570px;
                 }
                 .front-img {
                     position: absolute;
-                    top: 30vh;
-                    left: 6vw;
-                    height: 230px;
+                    top: 45vh;
+                    left: 7vw;
+                    height: 260px;
                 }
             }
             .vision-text-container {
-                width: 40%;
+                width: 35%;
 
                 .comics-desc-content-header {
                     width: unset;
@@ -85,11 +86,14 @@
                             font-size: 16px;
                             line-height: 20px;
                             position: absolute;
-                            margin-left: 1%;
+                            margin-left: 2%;
                             font-family: "openSans";
                             height: 13%;
                             display: flex;
                             align-items: center;
+                            span {
+                                width: 75%;
+                            }
                         }
                     }
                 }
@@ -100,8 +104,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px;
+            width: 85%;
+            margin: 0 auto;
             .text-slider {
-                width: 40%;
+                // width: 40%;
                 display: flex;
             }
         }

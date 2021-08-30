@@ -2,11 +2,29 @@
     width: 60vw !important;
     .ant-modal-content {
         background: unset;
+        .ant-modal-close {
+            color: #fff;
+            right: unset;
+            top: 35px;
+        }
+        .ant-modal-close:focus,
+        .ant-modal-close:hover {
+            color: #fff;
+        }
+    }
+    .slider-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow {
+            width: 16px;
+        }
     }
     .carousel-container {
         width: 470px !important;
         margin: 0 auto;
-  
+
         min-height: 70vh;
         display: flex !important;
         align-items: center !important;
