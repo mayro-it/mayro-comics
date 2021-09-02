@@ -1,9 +1,15 @@
 .comics-book-page {
     .comics-book-container {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         .page-header {
             margin: 40px 0;
+            .comics-desc-content-header {
+                .background {
+                    letter-spacing: unset;
+                    left: 5vw;
+                }
+            }
         }
         .comic-book-content {
             margin-bottom: 100px;

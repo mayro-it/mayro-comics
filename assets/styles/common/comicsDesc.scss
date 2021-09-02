@@ -1,7 +1,4 @@
 .comics-desc-container {
-    // background-image: url("/assets/images/redImg.png");
-    // background-size: contain;
-    // background-repeat: no-repeat;
     width: 90vw;
     height: 700px;
     background: #d33639;
@@ -25,10 +22,12 @@
             width: 50%;
             display: flex;
             justify-content: center;
+            padding-top: 50px;
             .home-page-slider {
                 .buttons-container {
                     justify-content: center;
                     .buttons-items {
+                        width: 15%;
                         .arrow-icon {
                             filter: brightness(0) invert(1);
                         }
@@ -58,11 +57,12 @@
                 }
                 .background {
                     position: absolute;
-                    top: -60px;
+                    top: -45px;
                     color: #c83134;
                     font-size: 100px;
                     letter-spacing: 0.04em;
                     line-height: 145px;
+                    font-weight: 700;
                 }
             }
             .text-content {

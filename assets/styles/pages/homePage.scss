@@ -2,6 +2,12 @@
     .home-page-top {
         display: flex;
         justify-content: center;
+        .home-com-int {
+            width: 50%;
+        }
+        .home-images-slider {
+            width: 34%;
+        }
     }
     .comics-desc-container {
         position: relative;
@@ -26,10 +32,14 @@
             width: 60%;
             .cover-name-container .cover-name-header {
                 position: unset;
+                line-height: 70px;
+            }
+            .text-container {
+                width: 70%;
             }
         }
     }
-    .page-footer-container{
+    .page-footer-container {
         margin-bottom: 60px;
     }
 }

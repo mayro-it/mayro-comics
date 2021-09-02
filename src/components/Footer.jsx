@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Input } from 'antd';
-const year = new Date().getFullYear();
+
+import { useSubscription } from "use-subscription";
 
 const Footer = () => {
     const { Search } = Input;

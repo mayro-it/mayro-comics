@@ -74,6 +74,7 @@
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
         "styled-components": "^5.3.1",
-        "styled-components-ts": "0.0.15"
+        "styled-components-ts": "0.0.15",
+        "use-subscription": "^1.5.1"
     }
 }
