@@ -41,7 +41,7 @@ const LinerSlider = ({ imagesArray }) => {
             <div className="prevEl link" ref={navigationPrevRef}>
                     <img src="/assets/images/icons/leftArrow.svg" />
                 </div>
-                <div className="nextEl link" ref={navigationNextRef}>
+                <div className="nextEl lin" ref={navigationNextRef}>
                     <img src="/assets/images/icons/rightArrow.svg" />
                 </div>
                

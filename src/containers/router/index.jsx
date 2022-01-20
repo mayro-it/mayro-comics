@@ -13,7 +13,6 @@ import CharachtersIlustrationsPage from '../../pages/CharachtersIlustrationsPage
 
 const MainRouter = () => {
     const pageURL = window.location.pathname;
-    console.log(pageURL)
     return (
         <div className='main-container'>
             <Header />

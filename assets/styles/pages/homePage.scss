@@ -4,11 +4,12 @@
         justify-content: center;
         .home-com-int {
             width: 40%;
-            display: flex;
-            justify-content: center;
+           
         }
         .home-images-slider {
-            width: 45%;
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
     .comics-desc-container {
@@ -29,7 +30,7 @@
     .hame-page-cooparate {
         margin-top: 60px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         .comics-intrioduction {
             width: 60%;
             .cover-name-container .cover-name-header {

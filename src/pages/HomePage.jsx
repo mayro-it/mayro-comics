@@ -3,7 +3,6 @@ import ComicsDesc from "../components/common/ComicsDesc";
 import ComicsIntroduction from "../components/common/ComicsIntroduction";
 import HomePageSlider from "../components/common/HomePageSlider";
 import PageFooter from "../components/common/PageFooter";
-import CoverFlow from "../components/sliders/CoverFlow";
 import LinerSlider from "../components/sliders/LinerSlider";
 
 const HomePage = () => {
@@ -46,18 +45,15 @@ const HomePage = () => {
                     </div>
                     <div className="home-images-slider">
                         {/* <CoverFlow /> */}
-                        <LinerSlider  imagesArray={imagesArr}/>
+                        <LinerSlider imagesArray={imagesArr} />
                         {/* <HomePageSlider imagesArr={imagesArr} /> */}
                     </div>
                 </div>
-                </div>
-                <div className="home-page-image">
-                    <img
-                        src="/assets/images/homePage.png"
-                        alt="home page image"
-                    />
-                </div>
-        
+            </div>
+            <div className="home-page-image">
+                <img src="/assets/images/homePage.png" alt="home page image" />
+            </div>
+
             <PageFooter />
         </div>
     );
