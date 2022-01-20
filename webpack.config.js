@@ -67,7 +67,7 @@ const config = {
         new HtmlWebpackPlugin({
             template: './index.html',
             googleAnalitic: env === 'production' ? `<script></script>` : '',
-            title: 'Test'
+            title: 'MAYRO COMICS'
         }),
         new MiniCssExtractPlugin({
             filename: "[name]-[hash].css",

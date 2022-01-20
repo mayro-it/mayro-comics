@@ -36,9 +36,9 @@ const Header = () => {
                         className={'select-box'}
                         defaultValue="Comics"
                         onChange={handleRedirect}
-                        suffixIcon={< img src='/assets/images/icons/arrowRed.svg' />}
+                        suffixIcon={<img src='/assets/images/icons/arrowRed.svg' />}
                         bordered={false}
-                        onClick={()=>setActiveTab('')}
+                        placeholder="Comics"
                     >
                         <Option value='comic-book'>Comic Books</Option>
                         <Option value='short-comics' >Short Comics</Option>

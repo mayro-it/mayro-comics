@@ -3,10 +3,12 @@
         display: flex;
         justify-content: center;
         .home-com-int {
-            width: 50%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
         }
         .home-images-slider {
-            width: 34%;
+            width: 45%;
         }
     }
     .comics-desc-container {
@@ -27,7 +29,7 @@
     .hame-page-cooparate {
         margin-top: 60px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         .comics-intrioduction {
             width: 60%;
             .cover-name-container .cover-name-header {
@@ -35,7 +37,7 @@
                 line-height: 70px;
             }
             .text-container {
-                width: 70%;
+                width: 100%;
             }
         }
     }

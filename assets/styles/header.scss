@@ -1,12 +1,13 @@
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 25px 0;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     .left-col {
         display: flex;
-        flex: 0.4;
+       
         justify-content: flex-start;
         .logo-container {
             width: 160px;
@@ -17,7 +18,7 @@
     }
     .right-col {
         display: flex;
-        flex: 0.3;
+        width: 35%;
         justify-content: center;
         color: #d33639;
         nav {
@@ -74,8 +75,14 @@
 }
 .headerNew {
     position: absolute;
+    .left-col{
+        flex: 0.2;
+        justify-content: center;
+        width: unset;
+    }
     .right-col {
         color: #fff;
+        flex: 0.3;
     }
     .ant-select-single .ant-select-selector .ant-select-selection-item,
     .ant-select-single .ant-select-selector .ant-select-selection-placeholder {

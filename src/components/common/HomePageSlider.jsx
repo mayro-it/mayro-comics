@@ -29,7 +29,7 @@ const HomePageSlider = ({ imagesArr }) => {
                 ref={carousel}
                 dots={false}
             >
-                {imagesArr && imagesArr.map((image, i) => (<div key={i} className='carusel-item-container'>
+                {imagesArr?.map((image, i) => (<div key={i} className='carusel-item-container'>
                     <img className='image' src={image} />
                 </div>))}
             </Carousel>

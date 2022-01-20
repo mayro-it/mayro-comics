@@ -1,0 +1,13 @@
+.liner-slider {
+    .buttons {
+        // width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 16px;
+        }
+        .prevEl{
+            margin-right: 10px;
+        }
+    }
+}

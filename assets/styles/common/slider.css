@@ -1,0 +1,51 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    /* background-position: center; */
+    background-size: cover;
+    width: 450px !important;
+    height: 470px !important;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .swiper-button-next {
+    background-image: url('/assets/images/icons/rightArrow.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  .swiper-button-prev {
+    background-image: url('/assets/images/icons/leftArrow.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-prev::after{
+      display: none;
+  }
+  .swiper-button-next::after {
+    display: none;
+  
+  }
+ 
+  .swiper-button-next{
+      height: 550px !important;
+      /* left: 120px !important; */
+      cursor: pointer;
+  }
+  .swiper-button-prev{
+    height: 550px !important;
+    /* right: 435px !important; */
+    cursor: pointer;
+}
+
+
