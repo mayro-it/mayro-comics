@@ -2,6 +2,7 @@ import React from 'react';
 import HomePageSlider from './HomePageSlider';
 import PropTypes from 'prop-types';
 import Buttons from './buttons/Buttons';
+import CoverFlow from '../sliders/CoverFlow';
 
 
 const ComicsDesc = () => {
@@ -12,7 +13,8 @@ const ComicsDesc = () => {
             </div>
             <div className='comics-desc-body'>
                 <div className='slider-container'>
-                    <HomePageSlider imagesArr={imagesArr} />
+                    {/* <HomePageSlider imagesArr={imagesArr} /> */}
+                    <CoverFlow />
                 </div>
                 <div className='comics-desc-content'>
                     <div className='comics-desc-content-header'>

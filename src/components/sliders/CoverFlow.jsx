@@ -2,12 +2,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
-import "swiper/css/effect-coverflow"
-import "swiper/css/pagination"
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 import "./../../../assets/styles/common/slider.css";
 
-SwiperCore.use([EffectCoverflow,Pagination]);
+SwiperCore.use([EffectCoverflow, Pagination]);
 
 const CoverFlow = () => {
     return (
@@ -18,8 +18,8 @@ const CoverFlow = () => {
                 centeredSlides={true}
                 slidesPerView={1}
                 coverflowEffect={{
-                    // rotate: 50,
-                    // stretch: 0,
+                    // rotate: 30,
+                    stretch: 0,
                     // depth: 100,
                     modifier: 1,
                     slideShadows: true,

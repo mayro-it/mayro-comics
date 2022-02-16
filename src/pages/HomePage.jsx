@@ -3,12 +3,11 @@ import ComicsDesc from "../components/common/ComicsDesc";
 import ComicsIntroduction from "../components/common/ComicsIntroduction";
 import HomePageSlider from "../components/common/HomePageSlider";
 import PageFooter from "../components/common/PageFooter";
+import HomePageTop from "../components/HomePageTop";
 import LinerSlider from "../components/sliders/LinerSlider";
 
 const HomePage = () => {
     const imagesArr = [
-        "/assets/images/fake/slider1.png",
-        "/assets/images/fake/slider2.png",
         "/assets/images/fake/slider1.png",
         "/assets/images/fake/slider2.png",
     ];
@@ -16,20 +15,7 @@ const HomePage = () => {
         <div className="home-page">
             <div className="home-page-container">
                 <div className="home-page-top">
-                    <div className="home-com-int">
-                        <ComicsIntroduction
-                            coverName="01"
-                            headerText="“Velvet Revolution”"
-                            text="comics"
-                            btnText="Buy now"
-                            shortText='The "Velvet Revolution" comic book is about the events that took 
-                        place in Armenia a year ago, and was later characterized as "revolution" by people in Armenia. '
-                            isVisible
-                        />
-                    </div>
-                    <div className="home-images-slider">
-                        <HomePageSlider imagesArr={imagesArr} />
-                    </div>
+                    <HomePageTop />
                 </div>
                 <ComicsDesc />
                 <div className="home-page-top hame-page-cooparate">
